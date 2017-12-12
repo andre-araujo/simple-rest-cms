@@ -2,7 +2,7 @@
     "name": "simple-rest-cms",
     "version": "0.0.1",
     "description": "A simple REST CMS",
-    "main": "./src/index.js",
+    "main": "./server/index.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/andre-araujo/simple-rest-cms"
@@ -10,8 +10,8 @@
     "author": "andre-araujo <andreluis9214@gmail.com>",
     "license": "MIT",
     "scripts": {
-        "start": "node ./src/index.js",
-        "start:dev": "nodemon ./src/index.js",
+        "start": "node ./server/index.js",
+        "start:dev": "nodemon ./server/index.js",
         "commit": "git-cz",
         "lint:fix": "eslint ./ --fix",
         "lint": "eslint ./"
@@ -19,8 +19,12 @@
     "dependencies": {
         "body-parser": "^1.18.2",
         "express": "^4.16.2",
+        "isomorphic-unfetch": "^2.0.0",
         "mongoose": "^4.13.0",
-        "passport": "^0.4.0"
+        "next": "^4.2.1",
+        "passport": "^0.4.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0"
     },
     "devDependencies": {
         "commitizen": "^2.9.6",
