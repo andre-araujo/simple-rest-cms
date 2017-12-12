@@ -29,7 +29,7 @@ app.prepare()
     server.use(bodyParser.urlencoded({ extended: true }));
     server.use(bodyParser.json());
 
-    server.get('*', (req, res) => app.getRequestHandler()(req, res));
+    require('./routes');
 
     server.listen(APP_PORT, () => {
         process.stdout.write(`> Ready on port ${APP_PORT}\n`);
