@@ -21,14 +21,12 @@ class LoginPanel extends Component {
     render() {
         const {
             onSubmit,
+            error,
         } = this.props;
 
         return (
             <section className="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
-                <form onSubmit={e => {
-                    e.preventDefault();
-                    onSubmit(this.state);
-                }}>
+                <form onSubmit={this.handleSubmit}>
                     <Input
                         name="login"
                         label="Login"
@@ -37,10 +35,15 @@ class LoginPanel extends Component {
                     <Input
                         name="password"
                         label="Password"
+                        type="password"
                         onChange={this.registerField}
                     />
+                    {
+                        error &&
+                        <p className="red f6 tc">{error}</p>
+                    }
                     <input
-                        className="f6 ba link dim br1 ph3 pv2 mb2 mt2 dib white bg-black pointer w-100"
+                        className="f4 ba link dim br1 ph3 pv2 mb2 mt2 dib white bg-black pointer w-100"
                         type="submit"
                         value="login"
                     />

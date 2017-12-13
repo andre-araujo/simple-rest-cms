@@ -11,13 +11,13 @@ const Account = require('../models/Account');
 
 function tokenController(req, res) {
     const {
-        email,
+        username,
         password,
     } = req.body;
 
     Account.findOneAndUpdate(
         {
-            email,
+            username,
             password: MD5(password).toString(),
         },
         { $set: { logged_at: new Date() } },

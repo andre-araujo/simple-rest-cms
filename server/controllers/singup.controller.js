@@ -22,7 +22,7 @@ function singup(req, res) {
     };
 
     Account.findOneAndUpdate(
-        { email: accountData.email },
+        { username: accountData.username },
         {
             ...account,
             $setOnInsert: { created_at: new Date() },
