@@ -2,7 +2,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const next = require('next');
-const fetch = require('isomorphic-unfetch');
 
 const dev = process.env.NODE_ENV !== 'production';
 
@@ -23,16 +22,16 @@ mongoose.connect(
 global.app = next({ dev });
 
 app.prepare()
-.then(() => {
-    global.server = express();
+    .then(() => {
+        global.server = express();
 
-    server.use(bodyParser.urlencoded({ extended: true }));
-    server.use(bodyParser.json());
+        server.use(bodyParser.urlencoded({ extended: true }));
+        server.use(bodyParser.json());
 
-    require('./routes');
+        require('./routes');
 
-    server.listen(APP_PORT, () => {
-        process.stdout.write(`> Ready on port ${APP_PORT}\n`);
+        server.listen(APP_PORT, () => {
+            process.stdout.write(`> Ready on port ${APP_PORT}\n`);
+        });
     });
-});
 

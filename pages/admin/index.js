@@ -1,4 +1,4 @@
-import LoginPanel from '../components/modules/LoginPanel'
+import LoginPanel from '../../components/modules/LoginPanel'
 
 function Home() {
     return(

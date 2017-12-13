@@ -1,2 +1,2 @@
-require('./api');
 require('./admin');
+require('./api');
