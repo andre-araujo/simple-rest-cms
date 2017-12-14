@@ -1,4 +1,5 @@
 import Document, { Head, Main, NextScript } from 'next/document';
+import Loading from '../components/elements/Loading'
 
 export default class MyDocument extends Document {
     render() {
@@ -15,6 +16,7 @@ export default class MyDocument extends Document {
                 <body>
                     <Main />
                     <NextScript />
+                    <Loading />
                 </body>
             </html>
         );
