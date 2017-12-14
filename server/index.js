@@ -19,6 +19,8 @@ mongoose.connect(
     },
 );
 
+require('../utils/generateDB');
+
 global.app = next({ dev });
 
 app.prepare()
