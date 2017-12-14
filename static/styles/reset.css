@@ -27,11 +27,11 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
-    background: red;
 }
 body {
     line-height: 1;
     font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 ol, ul {
 	list-style: none;

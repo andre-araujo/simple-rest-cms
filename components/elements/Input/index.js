@@ -2,6 +2,7 @@ function Input({
     type,
     name,
     label,
+    disabled,
     ...props
 }) {
     return (
@@ -14,10 +15,18 @@ function Input({
             </label>
             <input
                 name={name}
-                className="input-reset ba b--black-20 pa2 mb2 db w-100"
+                disabled={disabled}
+                className="input-reset ba b--black-20 pa2 db w-100"
                 type={type || 'text'}
                 {...props}
             />
+
+            <style jsx>{`
+                input[disabled] {
+                    background: none;
+                    border: 1px solid transparent;
+                }
+            `}</style>
         </div>
     );
 }

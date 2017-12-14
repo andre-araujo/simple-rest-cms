@@ -1,17 +1,12 @@
 import { Component } from 'react';
 import Header from '../../../components/modules/Header';
+import ContentTypes from '../../../components/modules/ContentTypes';
 
 function Dashboard() {
     return(
         <div>
             <Header />
-            <h1 className="content">CONTENT-TYPES</h1>
-
-            <style jsx>{`
-                .content {
-                    margin-top: 40px;
-                }
-            `}</style>
+            <ContentTypes />
         </div>
     )
 }

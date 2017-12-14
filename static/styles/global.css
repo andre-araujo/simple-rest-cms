@@ -1,4 +1,11 @@
-.content {
+.container {
     max-width: 960px;
     margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
 }

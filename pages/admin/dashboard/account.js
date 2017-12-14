@@ -5,7 +5,7 @@ function Dashboard() {
     return(
         <div>
             <Header />
-            <h1 className="content">ACCOUNT</h1>
+            <h1 className="container">ACCOUNT</h1>
 
             <style jsx>{`
                 .content {

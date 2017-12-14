@@ -19,7 +19,7 @@ const links = [
 function Header({ router }) {
     return (
         <nav>
-            <div className="content">
+            <div className="container">
                 <h1>Admin dashboard</h1>
                 <ul>
                     {
@@ -82,7 +82,7 @@ function Header({ router }) {
                     color: #ffa500;
                 }
 
-                .content {
+                .container {
                     line-height: 3rem;
                     display: flex;
                     justify-content: space-between;

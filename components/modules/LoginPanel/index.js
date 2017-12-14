@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-import Input from '../../elements/TextInput'
+import Input from '../../elements/Input'
 
 class LoginPanel extends Component {
     state = {}
