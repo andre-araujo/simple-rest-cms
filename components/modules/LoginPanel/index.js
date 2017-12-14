@@ -28,7 +28,7 @@ class LoginPanel extends Component {
             <section className="mw5 center bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
                 <form onSubmit={this.handleSubmit}>
                     <Input
-                        name="login"
+                        name="username"
                         label="Login"
                         onChange={this.registerField}
                     />

@@ -4,6 +4,7 @@ module.exports = {
     SECRET: 'somesecretkey',
     TOKEN_EXPIRATION_TIME: '30m',
     SUCCESS: 'ok',
+    SERVER_ERROR: 'internal server error',
     NOT_FOUND: 'not found',
     USER_NOT_FOUND: 'user not found',
     INVALID_USER: 'invalid user or password',
